@@ -1,0 +1,5 @@
+function deleteItem(type, index) {
+    if(type === 'income') incomes.splice(index, 1);
+    if(type === 'expense') expenses.splice(index, 1);
+    renderTable(); // جدول را آپدیت می‌کند
+}
