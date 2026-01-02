@@ -1,0 +1,10 @@
+let expenses = [];
+
+function addExpense() {
+    const desc = document.getElementById('expenseDesc').value;
+    const amount = parseFloat(document.getElementById('expenseAmount').value);
+    if(desc && !isNaN(amount)) {
+        expenses.push({desc, amount});
+        renderTable(); // جدول را آپدیت می‌کند
+    }
+}
