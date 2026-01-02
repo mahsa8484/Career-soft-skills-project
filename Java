@@ -1,0 +1,10 @@
+let incomes = [];
+
+function addIncome() {
+    const desc = document.getElementById('incomeDesc').value;
+    const amount = parseFloat(document.getElementById('incomeAmount').value);
+    if(desc && !isNaN(amount)) {
+        incomes.push({desc, amount});
+        renderTable(); // جدول را آپدیت می‌کند
+    }
+}
